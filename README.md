@@ -49,10 +49,8 @@ plt.title("Turbine Power vs Wind Speed")
 plt.xlabel("Wind Speed (mph)")
 plt.ylabel("Power Outage (watts)");
 ```
-
-The datapoints starts close to the origin where as expected a low wind speed produces little power from the turbine. At about 10mph there is a surge in power output along the diagonal of the chart. The datapoints eventually level off and drop abruptly possible due to the turbine switching itself off in excessive wind conditions. There are some outliers in the data which do not conform to the overall trend of the plot. 
-
-
+## Analysis of plot
+The datapoints that define the wind speed and power output relationship start close to the origin of the plot where as expected a low wind speed produces little power output from the turbine. From about 10mph there is a surge in power output along the diagonal of the chart from bottom left to top right of the plot. The datapoints eventually level off as maximum power output of the turbine seems to have been reached. The datapoints drop abruptly possibly due to the turbine switching itself off in excessive wind conditions. There are some outliers in the data which do not conform to the overall trend of the plot. This may be due to a mechanicel failure with the turbine. The plot indicates that the wind speed variable and power outage variable are heavily correlated and have a defined relationship which enables the prediction of wind turbine power output from wind speed values. The outliers in the data ensures that the dataset doesn't fit a straight line that well. 
 
 ## References
 
