@@ -19,12 +19,37 @@ The goal of the project is to display linear regression on a dataset provided. T
   - pandas
 
 ## Code
+
+import of libraries to be used
 ```
 import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
 import pandas as pd
 ````
+make plot tidier and bigger
+```
+plt.style.use("ggplot")
+plt.rcParams["figure.figsize"] = (20,10)
+```
+set x equal to input (speed variable) and y to output (power variable)
+```
+x = df.speed
+y = df.power
+```
+use polyfit function to plot the line
+plot x and y variables and the best fit line
+```
+coeffs = np.polyfit(x,y,1)
+plt.plot(x, y, '.', label = "Data")
+c=plt.plot(x, coeffs[0]*x+coeffs[1], '-', label = "Best fit")
+```
+add title, xlabel, ylabel to the plot
+```
+plt.title("Turbine Power vs Wind Speed")
+plt.xlabel("Wind Speed (mph)")
+plt.ylabel("Power Outage (watts)");
+```
 
 The datapoints starts close to the origin where as expected a low wind speed produces little power from the turbine. At about 10mph there is a surge in power output along the diagonal of the chart. The datapoints eventually level off and drop abruptly possible due to the turbine switching itself off in excessive wind conditions. There are some outliers in the data which do not conform to the overall trend of the plot. 
 
