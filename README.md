@@ -1,9 +1,32 @@
 # Project-Fundamentals
 
+# Wind speed vs Power Output Linear Regression
 
 ## Instructions
 In this project you must perform and explain simple linear regression using Python on the powerproduction dataset available on Moodle. The goal is to accurately predict wind turbine power output from wind speed values using the data set as a basis. To enhance your submission, you might consider comparing simple linear regression to other types of regression on this data set.
 
+## Introduction
+
+The goal of the project is to display linear regression on a dataset provided. The dataset contains the real world data of wind speed versus Power output. The plot of the data shows there is a definite relationship between the two variables. This makes the drawing on a straight line throiugh linear regression very straightforward. In the project i hope to explain how the concepts of linear regression, discuss other regression models and compare them to linear regression, explain the regression in this project and analyse its accuracy.
+
+## Technologies and Python libraries used
+
+- Jupyter
+- Git hub
+- Python
+  - numpy
+  - matplotlib
+  - pandas
+
+## Code
+```
+import matplotlib.pyplot as plt
+import seaborn as sns
+import numpy as np
+import pandas as pd
+````
+
+The datapoints starts close to the origin where as expected a low wind speed produces little power from the turbine. At about 10mph there is a surge in power output along the diagonal of the chart. The datapoints eventually level off and drop abruptly possible due to the turbine switching itself off in excessive wind conditions. There are some outliers in the data which do not conform to the overall trend of the plot. 
 
 
 
