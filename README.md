@@ -10,7 +10,7 @@ In this project you must perform and explain simple linear regression using Pyth
 The goal of the project is to display linear regression on a dataset provided. The dataset contains the real world data of wind speed versus Power output. The plot of the data shows there is a definite relationship between the two variables. This makes the drawing on a straight line throiugh linear regression very straightforward. In the project i hope to explain how the concepts of linear regression, discuss other regression models and compare them to linear regression, explain the regression in this project and analyse its accuracy.
 
 ## Technologies and Python libraries used
-
+The following applications and Python libraries were used in the creation of this project:
 - Jupyter
 - Git hub
 - Python
@@ -37,8 +37,7 @@ set x equal to input (speed variable) and y to output (power variable)
 x = df.speed
 y = df.power
 ```
-use polyfit function to plot the line
-plot x and y variables and the best fit line
+use polyfit function to plot the line, plot x and y variables and the best fit line
 ```
 coeffs = np.polyfit(x,y,1)
 plt.plot(x, y, '.', label = "Data")
